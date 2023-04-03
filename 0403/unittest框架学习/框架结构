@@ -1,0 +1,41 @@
+unittest框架的4个重要概念
+1.测试固件
+对于测试固件，可以理解在测试之前或者之后需要做的一些操作。
+例如执行之前，可能需要执行打开浏览器，创建数据库链接。
+执行之后，需要清理测试环境，关联数据库连接。
+unittest中常用的就是setup,Teardown,setupclass,teardownclass.
+2.测试用例
+testcase,通过unittest提供的assert方法来验证一组特定的操作或输入以后得到的具体响应。
+unittest提供了TestCase的基类。可以用来创建测试用例。
+unittest的测试用例必须以test开头，并且执行顺序是按照ascii排序。
+如果想按照顺序执行，可以在方法中test_001_one....test_002_two
+3.测试套件
+就是几个测试用例放在一起，一块执行
+4.测试运行器
+测试运行器用来执行测试用例，并返回测试用例执行的结果。可以通过图标，表格的方式展示
+如HTMLTestRunner,Allure
+
+
+内置装饰器
+1.无条件跳过
+@unittest.skip('')
+2.满足条件跳过装饰器
+@unittest.skipif()
+3.不满足条件跳过
+@unittest.skipUnless()
+
+
+
+执行测试命令
+python -m unittest -v 文件名
+
+
+批量执行
+  testsuite = unittest.TestLoader().discover('.')
+  unittest.TextTestRunner(verbosity=2).run(testsuite)
+通过unittest中的TestLoader提供的discover方法去找目录符合条件的测试用例。
+.代表当前目录，也可以构造
+以'test'开头的测试文件名均为符合条件的测试用例。
+
+问题：
+python3安装了HTMLTestRunner，替换的是XTestRunner，使用方法基本一样。

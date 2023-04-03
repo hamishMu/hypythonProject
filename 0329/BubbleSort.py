@@ -14,3 +14,4 @@ def bubble(nums):
 if __name__ == '__main__':
     nums = [3, 6, 4, 2, 11, 10, 5, 4, 3, 7]
     print(bubble(nums))
+

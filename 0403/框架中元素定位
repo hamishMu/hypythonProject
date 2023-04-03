@@ -1,0 +1,7 @@
+想操作iframe里面的元素，就要先切换到这个iframe上，然后进行操作。
+想操作iframe外的元素，就需要跳出这个iframe.
+切换到iframe可以通过4种方法实现：
+1.switch_to_frame(id)
+2.switch_to_frame(name)
+3.switch_to_frame(index)
+4.switch_to_frame(element)

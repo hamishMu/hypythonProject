@@ -1,0 +1,3 @@
+无界面运行
+options = webdriver.ChromeOptions()
+options.add_argument('headless')

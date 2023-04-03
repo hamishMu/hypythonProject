@@ -10,21 +10,20 @@ ______________________________
 """
 
 from selenium import webdriver
-import  unittest
+import unittest
+
 
 class VisitPTPress(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
 
-
     def test_open_ptpress(self):
         self.driver.get("https://www.ptpress.com.cn")
-        self.assertIn("图书",self.driver.page_source)
+        self.assertIn("图书", self.driver.page_source)
 
     def tearDown(self):
         self.driver.quit()
-
 
 
 if __name__ == '__main__':

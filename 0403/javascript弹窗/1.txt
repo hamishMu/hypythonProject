@@ -1,0 +1,15 @@
+alert:文字信息+确认按钮
+confrim:文字信息+确定按钮+取消按钮
+prompt：文字信息+文本框+确定按钮+取消按钮
+
+# 其中alert弹窗种的确定按钮
+switch_to_alert.accept()
+
+# confirm
+switch_to_alert.accept()     #确定
+switch_to_alert.dismiss()    #取消
+
+
+cookie存储到浏览器本地客户端，当我们发送请求携带cookie的时候可以实现登录
+session存储到服务器种
+token应用于应用程序
