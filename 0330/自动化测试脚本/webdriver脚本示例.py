@@ -16,7 +16,8 @@ import unittest
 class VisitPTPress(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        # self.driver = webdriver.Chrome()
+        self.driver = webdriver.Edge()
 
     def test_open_ptpress(self):
         self.driver.get("https://www.ptpress.com.cn")

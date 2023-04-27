@@ -1,0 +1,53 @@
+pytest -s '.\test_remark.py' -m 'L1'
+
+执行l1,l2级别用例
+-m 'l1 or l2'
+执行非l1级别的用例 -m 'not l1'
+
+执行的时候提示报错，需要将marks配置到pytest.ini文件中。
+
+
+跳过某些用例
+使用skip(reason=None)实现无条件跳过。
+
+使用skipif(condition,reason=None) 实现满足条件跳过。
+
+
+将配置信息写入pytest.ini文件中，
+需要注意一下三点
+1.文件名必须是pytest.ini
+2.文件内容必须以['pytest']开头
+3.文件内容不能包含中文
+通过关键字addopts来设置命令行参数。
+
+addopts = -v --rerun 2 --reruns-delay 2 -m 'L1'
+# 自定义标签
+markers = L1:level_1 testcases
+          L2:level_2 testcases
+# 自定义查找用例规则
+testpaths = testcases
+# 查找文件名以test_开头的文件
+python_file = test_*.py
+python_classes = Test*
+python_functions=test_*
+
+
+测试报告
+pytest支持多种形式的测试报告，
+1.pytest-html
+安装pip install pytest-html
+2.allure
+安装pip install allure-pytest
+
+执行测试用例：
+1.pytest.main(["-m","login","-s","-q","--alluredir=./report"])
+
+
+allure-pytest只是个插件，还需要下载allure,并且配置在环境变量中。
+
+
+pytest中的参数化，
+使用方式
+@pytest.mark.parametrize("argname","argvalues")
+argname:参数名称
+argvalues:参数对应值。

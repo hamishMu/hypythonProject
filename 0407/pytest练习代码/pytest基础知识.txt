@@ -1,0 +1,53 @@
+pytest框架组织形式更灵活，pytest配合插件可以实现失败用例再次执行，支持allure测试报告，测试报告更美观一些。
+
+查看模块版本
+pip show pytest
+
+pytest规则
+1.文件命名：
+默认以test_开头，或者以_test结尾
+测试类class命名：默认为Test开头
+测试方法函数，以test_开头。
+断言使用python中assert.
+
+对于pytest框架来说，可以不把测试用例放置到class中，而是直接定义函数。
+
+
+pytest测试固件：
+setup_module,teardown_module:用于模块的始末，只执行一次
+
+setup_function.teardown_function：只对函数生效，不用于类中。
+
+setup_class,teardown_class,在类中应用，在类中开始，结束时执行。
+
+setup_method,teardown_method,在方法中开始和结束执行。
+
+总结：
+如果测试我呢见中没有定义class,而是直接使用的函数，那么就使用“setup_module/teardown_module”和“setup_function/teardown_function”.
+
+如果文件中定义了class,那么就使用setup_class/teardown_class,和setup_method,teardown_method.
+
+建议在每一个项目中约定好定义class来组织测试用例还是直接定义函数。
+
+
+pytest.main['-s']执行当前文件所在目录下所有符合条件的测试用例。
+
+在class风格的脚本中，调试时候可以通过文件名后加冒号和class名来指定某个class.
+pytest.main['-s','test_case_demo02.py::Test01']
+
+
+1.可以在命令行中输入pytest,执行当前目录所有的测试用例。
+2.执行指定的用例文件
+pytest+文件名
+3.执行指定的用例类
+pytest 文件名::+类名
+
+参数：
+-s
+-k 执行包含某个字符串的测试用例
+-q 减少测试的运行冗长
+-x 执行失败就退出。
+
+pytest框架用例执行失败重试
+pip install pytest-rerunfailures模块
+失败重试两次，重试时间间隔2秒，--reruns 2 -delay  2

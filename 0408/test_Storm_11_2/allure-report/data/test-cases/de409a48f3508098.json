@@ -1,0 +1,87 @@
+{
+  "uid" : "de409a48f3508098",
+  "name" : "test_2_2",
+  "fullName" : "test_2_storm.TestDemo2#test_2_2",
+  "historyId" : "0b7a1e11145315e412d505b82330c467",
+  "time" : {
+    "start" : 1680961468012,
+    "stop" : 1680961468012,
+    "duration" : 0
+  },
+  "description" : "\n        用例描述：这是一个用例的描述\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：这是一个用例的描述\n    :return:\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "\n        用例描述：这是一个用例的描述\n        :return:\n        ",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "用例2：重要步骤",
+      "time" : {
+        "start" : 1680961468012,
+        "stop" : 1680961468012,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "story",
+    "value" : "测试用例2-2"
+  }, {
+    "name" : "suite",
+    "value" : "test_2_storm"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDemo2"
+  }, {
+    "name" : "host",
+    "value" : "hy-PC"
+  }, {
+    "name" : "thread",
+    "value" : "10548-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_2_storm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "de409a48f3508098.json",
+  "parameterValues" : [ ]
+}

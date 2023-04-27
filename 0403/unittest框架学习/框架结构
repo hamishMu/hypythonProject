@@ -38,4 +38,4 @@ python -m unittest -v 文件名
 以'test'开头的测试文件名均为符合条件的测试用例。
 
 问题：
-python3安装了HTMLTestRunner，替换的是XTestRunner，使用方法基本一样。
+python3安装不了HTMLTestRunner，替换的是XTestRunner，使用方法基本一样。

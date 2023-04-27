@@ -58,10 +58,10 @@ def login():
             print("用户名或者密码错误！请重新登录")
             return render_template('login.html', message=message)
     except Exception as e:
-        message = "用户名或者密码错误！请重新登录"
+        message = "发生异常！"
         db.rollback()
         print(e)
-        return render_template("login.html", message=message)
+        return render_template("error.html", message=message)
     finally:
         cursor.close()
         db.close()

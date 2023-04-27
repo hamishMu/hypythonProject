@@ -1,0 +1,67 @@
+{
+  "uid" : "8f2bd5d7c7bcc85d",
+  "name" : "test_2_1",
+  "fullName" : "test_2_storm.TestDemo2#test_2_1",
+  "historyId" : "82c83fd743688587909749e73866734e",
+  "time" : {
+    "start" : 1680961467727,
+    "stop" : 1680961467727,
+    "duration" : 0
+  },
+  "description" : "\n        用例描述：这是一个用例的描述\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    用例描述：这是一个用例的描述\n    :return:\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 2 == 3",
+  "statusTrace" : "self = <test_2_storm.TestDemo2 object at 0x000001D7FA16EB60>\n\n    @allure.story(\"测试用例2-1\")\n    @allure.severity(\"minor\")\n    def test_2_1(self):\n        \"\"\"\n        用例描述：这是一个用例的描述\n        :return:\n        \"\"\"\n        a = 1 + 1\n>       assert a == 3\nE       assert 2 == 3\n\ntest_2_storm.py:24: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试用例2-1"
+  }, {
+    "name" : "severity",
+    "value" : "minor"
+  }, {
+    "name" : "suite",
+    "value" : "test_2_storm"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDemo2"
+  }, {
+    "name" : "host",
+    "value" : "hy-PC"
+  }, {
+    "name" : "thread",
+    "value" : "10548-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_2_storm"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "minor",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8f2bd5d7c7bcc85d.json",
+  "parameterValues" : [ ]
+}
