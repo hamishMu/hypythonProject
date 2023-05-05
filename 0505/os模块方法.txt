@@ -1,0 +1,28 @@
+os模块中的方法：
+1.创建多级目录
+os.mkdirs(name,mode)
+name:用于指定创建的目录
+mode:用于指定数值模式，默认值0777
+2.删除目录
+os.rmdir()
+只有当要删除的目录为空时，才有效。
+如果想要删除非空目录
+使用python内置模块中shutil中rmtree()函数。
+3.遍历目录
+os模块中的walk()实现遍历目录的功能
+os.walk(top,topdown,onerror,followlinks)
+返回值：
+dirpath:当前遍历路径
+dirnames:表示当前路径下包含的子目录，是一个列表
+filenames:当前路径下包含的文件，也是一个列表
+4 高级文件操作函数
+access(path,accessmode) 获取文件是否有指定的访问权限
+R_OK:读
+W_OK:写
+X_OK:执行
+F_OK:存在
+5.chmod(path,mode)修改path指定文件的权限
+6.remove(path)删除
+7.rename(src,dst)重命名
+8.stat(path)返回指定文件的信息
+9.startfile(path,)
